@@ -1,0 +1,6 @@
+<% if ENV['JENKINS_SERVER_COOKIE'] %>
+default: --profile jenkins
+<% end %>
+
+jenkins:
+  --format junit --out reports/
