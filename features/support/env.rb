@@ -1,7 +1,7 @@
 require 'selenium/webdriver'
 require 'automate-cucumber'
 
-url = "http://#{ENV['BROWSERSTACK_USER']}:#{ENV['BROWSERSTACK_ACCESSKEY']}@hub.browserstack.com/wd/hub"
+url = "https://#{ENV['BROWSERSTACK_USER']}:#{ENV['BROWSERSTACK_ACCESSKEY']}@hub.browserstack.com/wd/hub"
 
 capabilities = Selenium::WebDriver::Remote::Capabilities.new
 capabilities[:project] = "Jenkins"
